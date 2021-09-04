@@ -1,24 +1,43 @@
-import logo from './logo.svg';
-import './App.css';
+import './styles.css';
+import {articleArray, mainArray, bioArray, faqArray} from "./data.js";
+import {HeadNav, FootNav} from "./Nav.js"
+
+function Header() {
+  return (
+    <header className="bodyHead">
+      <a className="homeLink" href="" aria-label="Site Title: Taco Crawl">
+        <h1 className="title">Taco Crawl</h1>
+      </a>
+      <HeadNav />
+			<nav className="bcNav">
+			</nav>
+    </header>
+  );
+}
+
+function Main() {
+  return (
+    <main id="allContent" className="homeContent">
+
+    </main>
+  );
+}
+
+function Footer() {
+  return (
+    <footer className="bodyFoot">
+    <FootNav />
+    </footer>
+  )
+}
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Header />
+      <Main />
+      <Footer />
+    </>
   );
 }
 
