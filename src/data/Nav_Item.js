@@ -3,14 +3,12 @@ class Nav_Item {
     title,
     className,
     link,
-    subLinks,
-    key
+    subLinks
   ) {
     this.title = title;
     this.className = className;
     this.link = link;
     this.subLinks = subLinks;
-    this.key = key;
   }
 }
 

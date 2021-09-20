@@ -330,26 +330,10 @@ a:focus {
 	border-top: .1em solid #62747F;
 }
 
-.bodyFoot li {
-	padding-bottom: .4em;
-}
-
 .footNav {
 	padding: 1.4em 0;
-}
-
-.footNavSection {
 	width: 30%;
 	margin: 0 auto 1.4em;
-}
-
-.footNavSection:last-of-type {
-	margin: auto;
-}
-
-.listTitle {
-	font-size: 1.5em;
-	color: #ffcc00;
 }
 
 .footList {
@@ -358,6 +342,19 @@ a:focus {
 	list-style: none;
 	padding: .4em 0 0;
 	margin: 0;
+}
+
+.footList:last-of-type {
+	margin: auto;
+}
+
+.footListItem {
+	padding-bottom: .4em;
+}
+
+.listTitle {
+	font-size: 1.5em;
+	color: #ffcc00;
 }
 
 .listTitle,
@@ -458,11 +455,11 @@ a:focus {
 		justify-content: space-around;
 		padding: 1.4em 0;
 	}
-	.footNavSection {
+	.footList {
 		margin: 0;
 		width: auto;
 	}
-	.footNavSection:last-of-type {
+	.footList:last-of-type {
 		margin: 0;
 	}
 }

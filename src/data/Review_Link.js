@@ -8,6 +8,7 @@ class Review_Link {
     caption,
     id,
     date,
+    name,
     section,
     subsection
   ) {
@@ -19,6 +20,7 @@ class Review_Link {
     this.caption = caption;
     this.id = id;
     this.date = date;
+    this.name = name;
     this.section = section;
     this.subsection = subsection;
   }
